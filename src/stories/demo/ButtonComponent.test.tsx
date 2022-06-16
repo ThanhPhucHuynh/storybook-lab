@@ -1,8 +1,8 @@
-import { Primary, argsPrimary, Secondary } from "./ButtonComponent.stories";
+import { Primary, Secondary } from "./ButtonComponent.stories";
 import { render, screen } from "@testing-library/react";
 
 test("should render primary button", () => {
-  render(<Primary {...argsPrimary} child={"Test"} />);
+  render(<Primary {...Primary.args} child={"Test"} />);
   expect(screen.getByRole("button")).toHaveTextContent(/test/i);
 });
 

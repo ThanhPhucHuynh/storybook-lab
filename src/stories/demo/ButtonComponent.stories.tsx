@@ -24,7 +24,7 @@ const Template: ComponentStory<typeof ButtonComponent> = (args) => (
 
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
-export const argsPrimary: Partial<IButtonComponentProps> = {
+const argsPrimary: Partial<IButtonComponentProps> = {
   child: "Label",
   color: "primary",
   onClick: (e) => {
